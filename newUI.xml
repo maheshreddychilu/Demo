@@ -4,7 +4,7 @@
 	<parameter name="environment" value="Dev" />
 	<parameter name="username" value="mahesh.chilumula@raweng.com" />
 	<parameter name="password" value="test123" />
-	<parameter name="browser" value="firefox" />
+	<parameter name="browser" value="saucelabs" />
 	<parameter name="platform" value="linux" />
 	<parameter name="baseDirPath" value="Report//" />
 	<parameter name="screenshotDirName" value="screenshot" />
