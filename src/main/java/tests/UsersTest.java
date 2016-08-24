@@ -6,14 +6,11 @@ import javax.mail.MessagingException;
 import javax.mail.internet.AddressException;
 
 import org.testng.annotations.Test;
-
 import com.built.io.automationframework.BaseTest;
 import com.built.io.automationframework.ExcelUtils;
-import com.built.io.automationframework.MailingReports;
-import com.built.io.automationframework.Reports;
 
 
-import com.built.io.automationframework.SendingReportsToSalck;
+
 
 import page.actions.DashboardPageActions;
 import page.actions.LoginPageActions;
