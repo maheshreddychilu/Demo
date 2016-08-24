@@ -142,8 +142,7 @@ public class UsersTest extends UsersActions {
 		System.out.println("mailing report");
      	MailingReports.mailReport();
 		System.out.println("mail sent successfully ");
-		SendingReportsToSalck.massege("contentstack-dev-qa");
-		System.out.println("message sent successfully ");
+		
 	   
 	}*/
 }
