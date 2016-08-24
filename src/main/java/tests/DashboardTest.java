@@ -8,6 +8,7 @@ import javax.mail.internet.AddressException;
 import org.testng.annotations.Test;
 
 import page.actions.DashboardPageActions;
+import page.actions.LoginPageActions;
 import page.actions.SettingPageActions;
 import page.objects.DashboardObjects;
 
@@ -24,20 +25,13 @@ public class DashboardTest extends DashboardPageActions {
 	public void createNewStack() throws AddressException, MessagingException, IOException {
 
 		createStackActions(ExcelUtils.readCell(1, ExcelUtils.getCell("sitename")));
-
-
-
-driver.get("https://contentstack.built.io/");
+		
+		driver.get("https://contentstack.built.io/");
 		LoginPageActions.login("mahesh.chilumula@raweng.com", "test123");
 		DashboardPageActions.publishReport();
 		System.out.println("mailing report");
      	MailingReports.mailReport();
 		System.out.println("mail sent successfully ");
-
-
-
-
-
    }
 	
 
