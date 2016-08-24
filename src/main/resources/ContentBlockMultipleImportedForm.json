@@ -1,0 +1,285 @@
+{
+  "title": "ContentBlockMultipleImportedForm",
+  "uid": "ContentBlockMultipleImportedForm",
+  "inbuilt_class": false,
+  "schema": [
+    {
+      "display_name": "Title",
+      "uid": "title",
+      "data_type": "text",
+      "field_metadata": {
+        "_default": true
+      },
+      "unique": "global",
+      "mandatory": true,
+      "multiple": false
+    },
+    {
+      "display_name": "Text_01",
+      "uid": "text_01",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": false
+    },
+    {
+      "display_name": "Text_02",
+      "uid": "text_02",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Text_03",
+      "uid": "text_03",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": true,
+      "multiple": true
+    },
+    {
+      "display_name": "Text_04",
+      "uid": "text_04",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false,
+        "multiline": true
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Text_05",
+      "uid": "text_05",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "basic",
+        "ref_multiple": false,
+        "allow_rich_text": true
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Text_06",
+      "uid": "text_06",
+      "data_type": "text",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false,
+        "allow_rich_text": true
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Group_field",
+      "uid": "group_field",
+      "data_type": "group",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true,
+      "schema": [
+        {
+          "display_name": "Title",
+          "uid": "title",
+          "data_type": "text",
+          "field_metadata": {
+            "_default": true
+          },
+          "unique": null,
+          "mandatory": false,
+          "multiple": false
+        },
+        {
+          "display_name": "GRP_RTE",
+          "uid": "grp_rte",
+          "data_type": "text",
+          "field_metadata": {
+            "description": "",
+            "rich_text_type": "standard",
+            "ref_multiple": false,
+            "allow_rich_text": true
+          },
+          "unique": null,
+          "mandatory": false,
+          "multiple": true
+        },
+        {
+          "display_name": "GRP_upload",
+          "uid": "grp_upload",
+          "data_type": "file",
+          "field_metadata": {
+            "description": "",
+            "rich_text_type": "standard",
+            "ref_multiple": false
+          },
+          "unique": null,
+          "mandatory": false,
+          "multiple": true
+        },
+        {
+          "display_name": "GRP_boolean",
+          "uid": "grp_boolean",
+          "data_type": "boolean",
+          "field_metadata": {
+            "description": "",
+            "rich_text_type": "standard",
+            "ref_multiple": false
+          },
+          "unique": null,
+          "mandatory": false,
+          "multiple": false
+        },
+        {
+          "display_name": "Grp_number",
+          "uid": "grp_number",
+          "data_type": "number",
+          "field_metadata": {
+            "description": "",
+            "rich_text_type": "standard",
+            "ref_multiple": false
+          },
+          "unique": null,
+          "mandatory": false,
+          "multiple": true
+        }
+      ]
+    },
+    {
+      "display_name": "UPLOADS",
+      "uid": "uploads",
+      "data_type": "file",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Link_field",
+      "uid": "link_field",
+      "data_type": "link",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Boolean",
+      "uid": "boolean",
+      "data_type": "boolean",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": false
+    },
+    {
+      "display_name": "Number_field",
+      "uid": "number_field",
+      "data_type": "number",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "display_name": "Date_field",
+      "uid": "date_field",
+      "data_type": "isodate",
+      "field_metadata": {
+        "description": "",
+        "rich_text_type": "standard",
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": true
+    },
+    {
+      "data_type": "text",
+      "display_name": "Markdown",
+      "uid": "markdown",
+      "field_metadata": {
+        "description": "",
+        "markdown": true,
+        "ref_multiple": false
+      },
+      "unique": null,
+      "mandatory": false,
+      "multiple": false
+    }
+  ],
+  "maintain_revisions": true,
+  "options": {
+    "title": "title",
+    "publishable": true,
+    "is_page": false,
+    "description": "Imported Form",
+    "sub_title": [
+      "url",
+      "text_01",
+      "boolean"
+    ],
+    "_version": 1
+  },
+  "abilities": {
+    "delete_all_objects": true,
+    "delete_object": true,
+    "update_object": true,
+    "create_object": true,
+    "get_all_objects": true,
+    "get_one_object": true
+  },
+  "DEFAULT_ACL": {
+    "others": {
+      "read": false,
+      "create": false
+    }
+  },
+  "singleton": false,
+  "last_activity": []
+}

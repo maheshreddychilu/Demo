@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="Dev" />
+	<parameter name="username" value="mahesh.chilumula@raweng.com" />
+	<parameter name="password" value="test123" />
+	<parameter name="browser" value="saucelabs" />
+	<parameter name="platform" value="linux" />
+	<parameter name="baseDirPath" value="Report//" />
+	<parameter name="screenshotDirName" value="screenshot" />
+	<parameter name="url" value="http://dev-csio:Csd8tz)As%3EHB8FUs@dev-manage.contentstack.io/"/>
+	<test name="Test">
+		<classes>
+		    <class name="tests.LoginPageTest" />
+			<class name="tests.DashboardTest" />
+			<class name="tests.HeaderAndFooterTest" />
+			<class name="tests.WebHookTest" />
+			<class name="tests.AuditLogsTest" />
+			<class name="tests.SettingsPageTest" />
+			<class name="tests.ContentTest" />
+			<class name="tests.EntryPageTest" />
+			<class name="tests.AssetTest" />
+			<class name="tests.RolesTest" />
+			<class name="tests.UsersTest" />
+		</classes>
+	</test>
+</suite>
+

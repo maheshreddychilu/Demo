@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="environment" value="Prodcution" />
+	<parameter name="username" value="mahesh.chilumula@raweng.com" />
+	<parameter name="password" value="test123" />
+	<parameter name="browser" value="firefox" />
+	<parameter name="platform" value="windows-10" />
+	<parameter name="baseDirPath"
+		value="D:\\ContenstackWorkspace\\ContentStackUIAutomation\\Report\\" />
+	<parameter name="screenshotDirName" value="screenshot" />
+	<parameter name="url"
+		value="https://contentstack.built.io/"/>
+	<test name="Test">
+		<classes>
+            <class name="tests.LoginPageTest" />
+			<class name="tests.DashboardTest" />
+			<class name="tests.URLpatternTest" />
+			<class name="tests.ColumnViewTest" />
+			<class name="tests.HeaderAndFooterTest" />
+			<class name="tests.WebHookTest" />
+			<class name="tests.AuditLogsTest" />
+			<class name="tests.SettingsPageTest" />
+			<class name="tests.ContentTest" />
+			<class name="tests.EntryPageTest" />
+			<class name="tests.AssetTest" />
+			<class name="tests.RolesTest" />
+			<class name="tests.UsersTest" />
+        </classes>
+	</test>
+</suite>
+

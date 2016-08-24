@@ -1,0 +1,8 @@
+target/
+.git/
+
+.project
+screenshot/
+Report/
+target/
+phantomjsdriver.log

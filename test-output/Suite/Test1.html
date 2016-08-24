@@ -1,0 +1,1352 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/82</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 02 17:51:55 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (178 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginPageTest.setup()'><b>setup</b><br>Test class: tests.LoginPageTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by @Configuration on method setup but has not been marked @Optional or defined
+in D:\ContenstackWorkspace\ContentStackUIAutomation\newUI.xml
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace684874119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace684874119'><pre>org.testng.TestNGException: 
+Parameter &apos;environment&apos; is required by @Configuration on method setup but has not been marked @Optional or defined
+in D:\ContenstackWorkspace\ContentStackUIAutomation\newUI.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:84)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:197)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DashboardTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.DashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.WebHookTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.AuditLogsTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.AuditLogsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AuditLogsTest@4590c9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.LoginPageTest.beforeclass()'><b>beforeclass</b><br>Test class: tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginPageTest@7946e1f4</td></tr>
+<tr>
+<td title='tests.DashboardTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.DashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.WebHookTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.AuditLogsTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AuditLogsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AuditLogsTest@4590c9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.LoginPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginPageTest@7946e1f4</td></tr>
+<tr>
+<td title='tests.DashboardTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.DashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.WebHookTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.WebHookTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AssetTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.nameBefore()'><b>nameBefore</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.DashboardTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.DashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.WebHookTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.AuditLogsTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AuditLogsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AuditLogsTest@4590c9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.LoginPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginPageTest@7946e1f4</td></tr>
+<tr>
+<td title='tests.DashboardTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.DashboardTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.WebHookTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.WebHookTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.UsersTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AssetTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.afterMethod()'><b>afterMethod</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SettingsPageTest.addLanguage()'><b>addLanguage</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.UsersTest.assignUserAsContentManager()'><b>assignUserAsContentManager</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.UsersTest.assignUserDevoloper()'><b>assignUserDevoloper</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.EntryPageTest.compareVersionOfEntry()'><b>compareVersionOfEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.ContentTest.copyContentType()'><b>copyContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.createChildLabel()'><b>createChildLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.createContentType()'><b>createContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.createEmptyContentTYpe()'><b>createEmptyContentTYpe</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.createEntry()'><b>createEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.EntryPageTest.createEntryInImportedContentType()'><b>createEntryInImportedContentType</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.createEnvironment()'><b>createEnvironment</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.Roles.createNewRole()'><b>createNewRole</b><br>Test class: tests.Roles</td>
+<td></td>
+<td>0</td>
+<td>tests.Roles@2344fc66</td></tr>
+<tr>
+<td title='tests.DashboardTest.createNewStack()'><b>createNewStack</b><br>Test class: tests.DashboardTest<br>Test method: Creating new site for sanity testing</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.ContentTest.createSetContentBlock()'><b>createSetContentBlock</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.createSingleContentBlock()'><b>createSingleContentBlock</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.WebHookTest.createWebhookForAnyAsset()'><b>createWebhookForAnyAsset</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.WebHookTest.createWebhookForAnyContenttype()'><b>createWebhookForAnyContenttype</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.WebHookTest.createWebhookForAnyEntry()'><b>createWebhookForAnyEntry</b><br>Test class: tests.WebHookTest</td>
+<td></td>
+<td>0</td>
+<td>tests.WebHookTest@b97c004</td></tr>
+<tr>
+<td title='tests.ContentTest.createWebhookForAspecificContenttype()'><b>createWebhookForAspecificContenttype</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.createWebhookForAspecificEntry()'><b>createWebhookForAspecificEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.deleteAssets()'><b>deleteAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.ContentTest.deleteContentType()'><b>deleteContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.deleteEnvironment()'><b>deleteEnvironment</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.deleteLanguage()'><b>deleteLanguage</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.Roles.deleteRole()'><b>deleteRole</b><br>Test class: tests.Roles</td>
+<td></td>
+<td>0</td>
+<td>tests.Roles@2344fc66</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.deleteStack()'><b>deleteStack</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.ContentTest.deletedLabel()'><b>deletedLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AssetTest.downloadAssets()'><b>downloadAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.AssetTest.editAsset()'><b>editAsset</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.ContentTest.editContentType()'><b>editContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.editLabe()'><b>editLabe</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.exportContenType()'><b>exportContenType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.exportContenTypeWithEntry()'><b>exportContenTypeWithEntry</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.importContentType()'><b>importContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.EntryPageTest.importEntryInImportedContentType()'><b>importEntryInImportedContentType</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.LoginPageTest.loginContentstack()'><b>loginContentstack</b><br>Test class: tests.LoginPageTest<br>Test method: login contentstack<br>Parameters: mahesh.chilumula@raweng.com, test123</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginPageTest@7946e1f4</td></tr>
+<tr>
+<td title='tests.ContentTest.paginationOfContentType()'><b>paginationOfContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AssetTest.publishAsset()'><b>publishAsset</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.AssetTest.searchAsset()'><b>searchAsset</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.ContentTest.searchContenType()'><b>searchContenType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.searchEnvironment()'><b>searchEnvironment</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.searchLanguage()'><b>searchLanguage</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.updateEnvironment()'><b>updateEnvironment</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.Roles.updateRole()'><b>updateRole</b><br>Test class: tests.Roles</td>
+<td></td>
+<td>0</td>
+<td>tests.Roles@2344fc66</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.updateStack()'><b>updateStack</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.AssetTest.uploadAssets()'><b>uploadAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyAuditLogsForCreateWebhookForAspecificContentType()'><b>verifyAuditLogsForCreateWebhookForAspecificContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyAuditLogsOfCreateSetContentBlock()'><b>verifyAuditLogsOfCreateSetContentBlock</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyAuditLogsOfCreateSingleContentBlock()'><b>verifyAuditLogsOfCreateSingleContentBlock</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AuditLogsTest.verifyAuditLogsOfCreateWebhookForAny()'><b>verifyAuditLogsOfCreateWebhookForAny</b><br>Test class: tests.AuditLogsTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AuditLogsTest@4590c9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.verifyAuditLogsOfEnvironments()'><b>verifyAuditLogsOfEnvironments</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.verifyAuditLogsOfLanguage()'><b>verifyAuditLogsOfLanguage</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.Roles.verifyAuditLogsOfRoles()'><b>verifyAuditLogsOfRoles</b><br>Test class: tests.Roles</td>
+<td></td>
+<td>0</td>
+<td>tests.Roles@2344fc66</td></tr>
+<tr>
+<td title='tests.AssetTest.verifyAuditlogsofCreateAssets()'><b>verifyAuditlogsofCreateAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.AssetTest.verifyAuditlogsofDeleteAssetAssets()'><b>verifyAuditlogsofDeleteAssetAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.AssetTest.verifyAuditlogsofUpdateAssetAssets()'><b>verifyAuditlogsofUpdateAssetAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.EntryPageTest.verifyCopyiedEntry()'><b>verifyCopyiedEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.DashboardTest.verifyDashBoard()'><b>verifyDashBoard</b><br>Test class: tests.DashboardTest<br>Test method: Stacks dashboard</td>
+<td></td>
+<td>0</td>
+<td>tests.DashboardTest@3c09711b</td></tr>
+<tr>
+<td title='tests.EntryPageTest.verifyDeleteEntry()'><b>verifyDeleteEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.EntryPageTest.verifyEditEntry()'><b>verifyEditEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.EntryPageTest.verifyExportEntry()'><b>verifyExportEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.AssetTest.verifyFiltersOfAssets()'><b>verifyFiltersOfAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.verifyFooter()'><b>verifyFooter</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.HeaderAndFooterTest.verifyHeader()'><b>verifyHeader</b><br>Test class: tests.HeaderAndFooterTest</td>
+<td></td>
+<td>0</td>
+<td>tests.HeaderAndFooterTest@5cc7c2a6</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyLabelViewPage()'><b>verifyLabelViewPage</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.AssetTest.verifyPublishActionsOfAssets()'><b>verifyPublishActionsOfAssets</b><br>Test class: tests.AssetTest</td>
+<td></td>
+<td>0</td>
+<td>tests.AssetTest@2669b199</td></tr>
+<tr>
+<td title='tests.Roles.verifyRolesPage()'><b>verifyRolesPage</b><br>Test class: tests.Roles</td>
+<td></td>
+<td>0</td>
+<td>tests.Roles@2344fc66</td></tr>
+<tr>
+<td title='tests.EntryPageTest.verifySearchEntry()'><b>verifySearchEntry</b><br>Test class: tests.EntryPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.EntryPageTest@6574b225</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.verifySettingsMenu()'><b>verifySettingsMenu</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.SettingsPageTest.verifyStacksPage()'><b>verifyStacksPage</b><br>Test class: tests.SettingsPageTest</td>
+<td></td>
+<td>0</td>
+<td>tests.SettingsPageTest@32e6e9c3</td></tr>
+<tr>
+<td title='tests.UsersTest.verifyUserDefault()'><b>verifyUserDefault</b><br>Test class: tests.UsersTest</td>
+<td></td>
+<td>0</td>
+<td>tests.UsersTest@458ad742</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfCopyContentType()'><b>verifyauditlogOfCopyContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfCreateContentType()'><b>verifyauditlogOfCreateContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfCreateEmptyContentType()'><b>verifyauditlogOfCreateEmptyContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfCreateLabel()'><b>verifyauditlogOfCreateLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfCreateSanityLabel()'><b>verifyauditlogOfCreateSanityLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfDeleteContentType()'><b>verifyauditlogOfDeleteContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfDeleteLabel()'><b>verifyauditlogOfDeleteLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfExportContentType()'><b>verifyauditlogOfExportContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfImportContentType()'><b>verifyauditlogOfImportContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfUpdateContentType()'><b>verifyauditlogOfUpdateContentType</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+<tr>
+<td title='tests.ContentTest.verifyauditlogOfUpdateLabel()'><b>verifyauditlogOfUpdateLabel</b><br>Test class: tests.ContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContentTest@5056dfcb</td></tr>
+</table><p>
+</body>
+</html>

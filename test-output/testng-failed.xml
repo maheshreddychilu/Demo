@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="environment" value="Prodcution"/>
+  <parameter name="password" value="test123"/>
+  <parameter name="baseDirPath" value="D:\\ContenstackWorkspace\\ContentStackUIAutomation\\Report\\"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="screenshotDirName" value="screenshot"/>
+  <parameter name="platform" value="windows-10"/>
+  <parameter name="url" value="https://contentstack.built.io/"/>
+  <parameter name="username" value="mahesh.chilumula@raweng.com"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="tests.LoginPageTest">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="afterMethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- tests.LoginPageTest -->
+      <class name="tests.DashboardTest">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="afterMethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- tests.DashboardTest -->
+      <class name="tests.PublishModalTest">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="verifyPublishingModal"/>
+          <include name="afterMethod"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- tests.PublishModalTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

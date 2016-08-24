@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="611207" started-at="2016-08-24T05:12:52Z" finished-at="2016-08-24T05:23:04Z">
+    <groups>
+      <group name="Publish/Unpublish">
+        <method signature="VerifyPublishActivitiesTest.publishAssetWithSchedule()[pri:1, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="publishAssetWithSchedule" class="tests.VerifyPublishActivitiesTest"/>
+        <method signature="VerifyPublishActivitiesTest.publishEntryWithSchedule()[pri:3, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="publishEntryWithSchedule" class="tests.VerifyPublishActivitiesTest"/>
+        <method signature="VerifyPublishActivitiesTest.unPublishAssetWithSchedule()[pri:2, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="unPublishAssetWithSchedule" class="tests.VerifyPublishActivitiesTest"/>
+        <method signature="VerifyPublishActivitiesTest.unPublishEntryWithSchedule()[pri:4, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="unPublishEntryWithSchedule" class="tests.VerifyPublishActivitiesTest"/>
+      </group> <!-- Publish/Unpublish -->
+      <group name="LoginPage">
+        <method signature="LoginPageTest.loginContentstack(java.lang.String, java.lang.String)[pri:2, instance:tests.LoginPageTest@15975490]" name="loginContentstack" class="tests.LoginPageTest"/>
+      </group> <!-- LoginPage -->
+    </groups>
+    <test name="Test" duration-ms="611207" started-at="2016-08-24T05:12:52Z" finished-at="2016-08-24T05:23:04Z">
+      <class name="tests.VerifyPublishActivitiesTest">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="beforeclass" is-config="true" duration-ms="14" started-at="2016-08-24T10:42:55Z" finished-at="2016-08-24T10:42:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="nameBefore" is-config="true" duration-ms="1" started-at="2016-08-24T10:42:55Z" finished-at="2016-08-24T10:42:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.publishAssetWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="publishAssetWithSchedule()[pri:1, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="publishAssetWithSchedule" duration-ms="160721" started-at="2016-08-24T10:42:55Z" finished-at="2016-08-24T10:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishAssetWithSchedule -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="afterMethod" is-config="true" duration-ms="63" started-at="2016-08-24T10:45:36Z" finished-at="2016-08-24T10:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.publishAssetWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="nameBefore" is-config="true" duration-ms="1" started-at="2016-08-24T10:45:36Z" finished-at="2016-08-24T10:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.unPublishAssetWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="unPublishAssetWithSchedule()[pri:2, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="unPublishAssetWithSchedule" duration-ms="157946" started-at="2016-08-24T10:45:36Z" finished-at="2016-08-24T10:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unPublishAssetWithSchedule -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="afterMethod" is-config="true" duration-ms="111" started-at="2016-08-24T10:48:14Z" finished-at="2016-08-24T10:48:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.unPublishAssetWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="publishEntryWithSchedule()[pri:3, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="publishEntryWithSchedule" duration-ms="156881" started-at="2016-08-24T10:48:14Z" finished-at="2016-08-24T10:50:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publishEntryWithSchedule -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="nameBefore" is-config="true" duration-ms="0" started-at="2016-08-24T10:48:14Z" finished-at="2016-08-24T10:48:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.publishEntryWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="afterMethod" is-config="true" duration-ms="50" started-at="2016-08-24T10:50:51Z" finished-at="2016-08-24T10:50:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.publishEntryWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="unPublishEntryWithSchedule()[pri:4, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="unPublishEntryWithSchedule" duration-ms="132253" started-at="2016-08-24T10:50:51Z" finished-at="2016-08-24T10:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unPublishEntryWithSchedule -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="nameBefore" is-config="true" duration-ms="0" started-at="2016-08-24T10:50:51Z" finished-at="2016-08-24T10:50:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.unPublishEntryWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.VerifyPublishActivitiesTest@6b143ee9]" name="afterMethod" is-config="true" duration-ms="162" started-at="2016-08-24T10:53:03Z" finished-at="2016-08-24T10:53:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void tests.VerifyPublishActivitiesTest.unPublishEntryWithSchedule()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.VerifyPublishActivitiesTest -->
+      <class name="tests.LoginPageTest">
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.LoginPageTest@15975490]" name="setup" is-config="true" duration-ms="19261" started-at="2016-08-24T10:42:33Z" finished-at="2016-08-24T10:42:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Production]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://contentstack.built.io/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[D:/ContenstackWorkspace/ContentStackUIAutomation/Report]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[screenshot]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:tests.LoginPageTest@15975490]" name="beforeclass" is-config="true" duration-ms="18" started-at="2016-08-24T10:42:52Z" finished-at="2016-08-24T10:42:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeclass -->
+        <test-method status="PASS" signature="nameBefore(java.lang.reflect.Method)[pri:0, instance:tests.LoginPageTest@15975490]" name="nameBefore" is-config="true" duration-ms="4" started-at="2016-08-24T10:42:52Z" finished-at="2016-08-24T10:42:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.loginContentstack(java.lang.String,java.lang.String) throws javax.mail.internet.AddressException,javax.mail.MessagingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameBefore -->
+        <test-method status="PASS" signature="loginContentstack(java.lang.String, java.lang.String)[pri:2, instance:tests.LoginPageTest@15975490]" name="loginContentstack" duration-ms="2689" started-at="2016-08-24T10:42:52Z" description="login contentstack" finished-at="2016-08-24T10:42:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mahesh.chilumula@raweng.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginContentstack -->
+        <test-method status="PASS" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginPageTest@15975490]" name="afterMethod" is-config="true" duration-ms="277" started-at="2016-08-24T10:42:55Z" finished-at="2016-08-24T10:42:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.loginContentstack(java.lang.String,java.lang.String) throws javax.mail.internet.AddressException,javax.mail.MessagingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@15975490]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-08-24T10:53:04Z" finished-at="2016-08-24T10:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
