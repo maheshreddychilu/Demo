@@ -26,12 +26,7 @@ public class DashboardTest extends DashboardPageActions {
 
 		createStackActions(ExcelUtils.readCell(1, ExcelUtils.getCell("sitename")));
 		
-		driver.get("https://contentstack.built.io/");
-		LoginPageActions.login("mahesh.chilumula@raweng.com", "test123");
-		DashboardPageActions.publishReport();
-		System.out.println("mailing report");
-     	MailingReports.mailReport();
-		System.out.println("mail sent successfully ");
+		
    }
 	
 
